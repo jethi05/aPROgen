@@ -32,7 +32,7 @@ def xtime(toolortech:str):
 def main():
     parser = ArgumentParser(prog = "Azubi Protokoll gen",
                             description = "Für unser Azubi Wiki wird hier der Eintrag generiert",
-                            epilog = "--- Epilog ---")
+                            epilog = "möge argparse mit euch sein")
     parser.add_argument("-a", "--ausbilderthemen",
                         help="Hier können Themen aus dem Azubi-meeting hingeschrieben werden",
                         action="store_true")
@@ -42,8 +42,8 @@ def main():
     parser.add_argument("-T", "--techtime",
                         help="Fügt TechTime Thema && Namen hinzu",
                         action="store_true")
-    parser.add_argument("-v", "--verbose",
-                       action="store_true")
+    #parser.add_argument("-v", "--verbose",
+    #                   action="store_true")
     args = parser.parse_args()
     endergebnis = f'''# {datetime.now().date().isoformat()}'''
     if args.ausbilderthemen:
@@ -52,9 +52,9 @@ def main():
         endergebnis += f"\n{xtime('TOOLtime')}"
     if args.techtime:
         endergebnis += f"\n{xtime('TECHtime')}"
-    
+    print("---------------------") 
     print(endergebnis)
-    #parser.print_help()
+    print("---------------------") 
 
 if __name__ == "__main__":
     main()
