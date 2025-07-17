@@ -12,7 +12,7 @@ def verbose(vnachricht):
 
 def ausbilderthemen():
     print("__AusbilderTHEMEN__\n")
-    Ergebnis = '''\nThemen Ausbilder:''' 
+    Ergebnis = '''\nThemen:''' 
     print("Füge Themen hinzu, wenn das feld leer ist, endet die Aufnahme von Themen")
     thema = "x"
     while thema != "":
