@@ -4,6 +4,7 @@ Protkoll generierung für Azubi-meeting
 '''
 from argparse import ArgumentParser
 from datetime import datetime
+import sys
 
 def verbose(vnachricht):
     print(bool_verbose)
@@ -44,6 +45,9 @@ def main():
                         action="store_true")
     #parser.add_argument("-v", "--verbose",
     #                   action="store_true")
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
     args = parser.parse_args()
     endergebnis = f'''# {datetime.now().date().isoformat()}'''
     if args.ausbilderthemen:
