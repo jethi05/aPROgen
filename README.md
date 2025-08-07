@@ -1,5 +1,5 @@
 # Protokoll gen:
-Ich habe die neue Protokollierung im Azubi-Wiki gesehen und dachte ich mache ein Scipt, 
+Ich habe die neue Protokollierung gesehen und dachte ich mache ein Scipt, 
 weil ich faul bin
 
 ```
