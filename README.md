@@ -2,6 +2,8 @@
 Ich habe die neue Protokollierung gesehen und dachte ich mache ein Scipt, 
 weil ich faul bin
 
+![Badge](https://img.shields.io/badge/Version-1.0-purple)
+
 ```
 usage: Azubi Protokoll gen [-h] [-a] [-t] [-T] [-v]
 
